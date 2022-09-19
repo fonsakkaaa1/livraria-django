@@ -9,13 +9,13 @@ class CategoriaViewSet(ModelViewSet):
 
 class EditoraViewSet(ModelViewSet):
     queryset = Editora.objects.all()
-    serializer_class = CategoriaSerializer
+    serializer_class = EditoraSerializer
 
 class AutorViewSet(ModelViewSet):
     queryset = Autor.objects.all()
-    serializer_class = CategoriaSerializer
+    serializer_class = AutorSerializer
 
 class LivroViewSet(ModelViewSet):
     queryset = Livro.objects.all()
-    serializer_class = CategoriaSerializer
+    serializer_class = LivroSerializer
 
